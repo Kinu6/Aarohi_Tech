@@ -21,10 +21,12 @@ public class TC_01Test extends BaseClass{
 		
 		HomePage hp= new HomePage(driver);
 		wUtil.implicitlyWait(driver);
+		wUtil.waitForElementToBeVisible(driver,hp.getContactsLnk() );
 		hp.getContactsLnk().click();
 		
 		CreateContactPage ccp= new CreateContactPage(driver);
 		wUtil.implicitlyWait(driver);
+        wUtil.waitForElementToBeVisible(driver,ccp.getCreateContactIcon());
 		ccp.getCreateContactIcon().click();
 		
 		NewContactPage cncp= new NewContactPage(driver);
@@ -39,6 +41,7 @@ public class TC_01Test extends BaseClass{
 		String orginfo= cip.getHeaderTxt().getText();
 		Assert.assertEquals(orginfo.contains(LASTNAME), true);
 		
+		wUtil.implicitlyWait(driver);
 	}
 	@Test
 	public void demo() {
