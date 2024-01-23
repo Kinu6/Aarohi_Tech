@@ -7,6 +7,7 @@
         <methods>
           <include name="TC_01"/>
           <include name="bsconfig"/>
+          <include name="demo"/>
           <include name="asConfig"/>
           <include name="bfConfig"/>
           <include name="acConfig"/>
