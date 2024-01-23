@@ -10,5 +10,4 @@ public class ReadDatafromCmdLine {
 		String Uvalue= System.getProperty("url");
 		System.out.println(Uvalue);
 	}
-
 }
