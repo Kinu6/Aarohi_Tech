@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="aarohi.ContactTests.TC_01Test"/>
+      <class name="practice.ReadDatafromCmdLine"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
